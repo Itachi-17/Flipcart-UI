@@ -1,0 +1,296 @@
+.header {
+  width: 100vw;
+  height: 8rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.search-inp-icon-sec {
+  width: 50%;
+  background-color: rgb(239, 242, 255);
+  height: 60%;
+  margin-left: 4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.search-inp-icon-sec input {
+  background-color: transparent;
+  width: 93%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.7rem;
+  color: rgb(19, 19, 19);
+}
+.search-inp-icon-sec input::placeholder {
+  color: gray;
+}
+.search-inp-icon-sec .serach-icon {
+  font-size: 2.7rem;
+  width: 7%;
+  color: rgb(126, 126, 126);
+}
+
+.login-container {
+  position: relative;
+}
+
+.login-btn-sec {
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.9rem 1.5rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.login-container:hover .login-btn-sec {
+  background-color: rgb(30, 98, 255);
+}
+
+.login-btn-sec .login-user-icon {
+  font-size: 1.9rem;
+}
+
+.login-btn-sec .login-btn {
+  font-size: 1.7rem;
+}
+
+.login-btn-sec .login-drop-icon {
+  font-size: 2.8rem;
+  transition: 0.2s ease-in-out transform;
+}
+
+.login-container:hover .login-btn,
+.login-container:hover .login-user-icon {
+  color: white;
+}
+
+.login-container:hover .login-drop-icon {
+  color: white;
+  transform: rotate(180deg);
+}
+
+.account-dropdown-card {
+  width: 28rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 20;
+  background-color: white;
+  box-shadow: 0 0 0.5rem rgb(168, 168, 168);
+  border-radius: 0 0 0.8rem 0.8rem;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.login-container:hover .account-dropdown-card {
+  display: flex;
+}
+
+.account-dropdown-card .item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.4rem;
+  transition: 0.3s ease-in-out transform;
+  cursor: pointer;
+}
+
+.account-dropdown-card .item:hover {
+  transform: scale(1.02);
+  background-color: rgb(246, 246, 246);
+}
+
+.card-item-icon {
+  font-size: 1.7rem;
+  color: rgb(47, 47, 47);
+}
+
+.card-item-name {
+  font-size: 1.4rem;
+}
+
+.dot3-sec {
+  position: relative;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.dot3-sec .dot3-icon {
+  font-size: 2rem;
+}
+
+.dot3-sec:hover {
+  background: #f9f9f9;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.dot3-sec:hover .dot3-dropdown-card {
+  display: flex;
+}
+
+.dot3-dropdown-card {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 3.8rem;
+  right: 0;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgb(168, 168, 168);
+  padding: 0.5rem 0;
+  border-radius: 0 0 0.8rem 0.8rem;
+  width: 22rem;
+  overflow: hidden;
+}
+
+.dot3-dropdown-card .item {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1.5rem;
+  gap: 1rem;
+  transition: 0.3s ease-in-out transform;
+}
+
+.dot3-dropdown-card .item:hover {
+  transform: scale(1.02);
+  background-color: rgb(238, 238, 238);
+}
+
+.dot3-dropdown-card .item .item-icons {
+  font-size: 1.6rem;
+}
+
+.dot3-dropdown-card .item p {
+  font-size: 1.4rem;
+}
+
+/* Category Components style */
+
+.category-nav {
+  margin-top: 1rem;
+  width: 97%;
+  background-color: white;
+  box-shadow: 0 0 0.5rem rgb(225, 225, 225);
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.category-item-sec {
+  display: flex;
+  gap: 0.7rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  min-width: 10rem;
+}
+.category-img {
+  width: 8rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80%;
+    height: 90%;
+  }
+}
+
+.category-name-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .categ-drop-icon {
+    font-size: 2.5rem;
+    color: black;
+  }
+  p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+/* Best Deal Components */
+.best-deals-wrapper {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+  flex-direction: column;
+  width: 97%;
+  padding: 2rem;
+  background-color: white;
+}
+.best-deals-card-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.best-deals-card {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .best-deals-img {
+    width: 21rem;
+    height: 21rem;
+    display: flex;
+    justify-content: center;
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+  h3 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  p {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+}
+
+/* ProductBanner.jsx Component */
+.product-banner-sec {
+  margin-top: 2rem;
+  width: 97%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+/* FeaturedBrands.jsx components */
+
+.featured-brands-sec {
+  margin-top: 10rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  p {
+    font-size: 4rem;
+  }
+}
